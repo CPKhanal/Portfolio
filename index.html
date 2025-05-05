@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chandra Prakash Khanal" />
+    <meta
+      name="description"
+      content="Chandra Prakash Khanal - Full-Stack Developer Portfolio"
+    />
+    <meta property="og:title" content="CP Khanal | Portfolio" />
+    <meta
+      property="og:description"
+      content="Full-Stack Developer and Computer Programming Graduate"
+    />
+    <meta property="og:image" content="assets/images/preview.png" />
+    <meta property="og:url" content="https://cpkhanal.github.io" />
+
+    <title>CP Khanal | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ICO (for most browsers) -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- PNG (for fallback and Android) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+
+    <!-- SVG (for modern browsers) -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+
+    <!-- Manifest (for PWA setup, optional) -->
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <a href="#home" class="logo"
+          ><span class="first-letter-red">C</span>P Khanal</a
+        >
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="first-letter-red">Chandra Prakash</span></h1>
+        <p>I’m a <span id="typed-text"></span></p>
+        <a href="./assets/Resume.pdf" class="btn" target="_blank"
+          >Download Resume</a
+        >
+        <div class="badges">
+          <span class="badge">🎓 Diploma Graduate</span>
+          <span class="badge">💻 Full-Stack Dev</span>
+          <span class="badge">🌍 Open to Work</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/bg.jpg" alt="Chandra Prakash Khanal" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" data-aos="fade-up">
+      <h2><i class="fas fa-user-circle"></i> About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hello! I'm <strong>Chandra Prakash Khanal</strong>, a passionate
+            developer with a diploma in Computer Programming from Algonquin
+            College.
+          </p>
+          <p>
+            I love building things that solve real problems — from responsive
+            websites to interactive apps. I'm especially drawn to clean UI/UX
+            and full-stack development.
+          </p>
+          <p>
+            When I’m not coding, I’m probably reading about tech, experimenting
+            with animations, or exploring open-source projects.
+          </p>
+          <p>
+            <strong
+              >Currently open to internships or junior developer roles.</strong
+            >
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <i class="fas fa-laptop-code"></i> Full-Stack Enthusiast
+          </div>
+          <div class="about-card">
+            <i class="fas fa-code-branch"></i> Git & Agile Friendly
+          </div>
+          <div class="about-card">
+            <i class="fas fa-rocket"></i> Fast Learner & Problem Solver
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education" data-aos="fade-up">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="edu-container">
+        <div class="edu-box">
+          <div class="edu-header">
+            <h3>Diploma in Computer Programming</h3>
+            <span class="edu-date">Sept 2023 – Apr 2025</span>
+          </div>
+          <p class="edu-college">Algonquin College, Mississauga Campus</p>
+          <p class="edu-gpa" title="Grade Point Average out of 4.0 scale">
+            <i class="fas fa-chart-bar"></i> GPA: <strong>3.96</strong> | Dean’s
+            Honour List (3x)
+          </p>
+          <ul class="edu-list">
+            <li>
+              <i class="fas fa-code"></i> Full-stack development with
+              <strong>Java</strong>, <strong>JavaScript</strong>, and
+              <strong>SQL</strong>
+            </li>
+            <li>
+              <i class="fas fa-database"></i> Projects in databases, networking,
+              mobile UI, enterprise systems
+            </li>
+            <li>
+              <i class="fas fa-laptop-code"></i> Capstone software development
+              project
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills" data-aos="fade-up">
+      <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+    
+      <div class="skills-group">
+        <h3>Frontend</h3>
+        <div class="skills-row">
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-html5"></i></span><span class="skill-name">HTML</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-css3-alt"></i></span><span class="skill-name">CSS</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-js-square"></i></span><span class="skill-name">JavaScript</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-react"></i></span><span class="skill-name">React.js</span></span>
+        </div>
+    
+        <h3>Backend</h3>
+        <div class="skills-row">
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-java"></i></span><span class="skill-name">Java</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-node"></i></span><span class="skill-name">Node.js</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fas fa-code"></i></span><span class="skill-name">PHP</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fas fa-database"></i></span><span class="skill-name">MySQL</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fas fa-database"></i></span><span class="skill-name">MongoDB</span></span>
+        </div>
+    
+        <h3>Tools & Others</h3>
+        <div class="skills-row">
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-python"></i></span><span class="skill-name">Python</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-linux"></i></span><span class="skill-name">Linux</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fab fa-git-alt"></i></span><span class="skill-name">Git</span></span>
+          <span class="skill-badge"><span class="skill-icon"><i class="fas fa-project-diagram"></i></span><span class="skill-name">Agile</span></span>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2><i class="fas fa-folder-open"></i> Projects</h2>
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>My7Quotes App</h3>
+          <p>
+            A quote-sharing mobile app built using Flutter and Firebase.
+            Features include background music, offline sync, and image export.
+          </p>
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Hive</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Subscription Tracker App</h3>
+          <p>
+            A Flutter-based mobile app to track monthly subscriptions and
+            expenses with local storage and reminders.
+          </p>
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Hive</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Bookstore Website</h3>
+          <p>
+            A dynamic bookstore website built using PHP. Includes product
+            listings, cart functionality, and an admin panel to manage books and
+            orders.
+          </p>
+          <div class="project-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Admin Panel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/CPKhanal/BookStore-Website-Using-HTML-Bootstrap-And-PHP" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+
+      <!-- Contact Form -->
+      <form
+        action="https://formsubmit.co/cpkhanal0@gmail.com"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="contact-socials">
+        <h3>Connect with me</h3>
+        <div class="social-links">
+          <a href="mailto:cpkhanal0@gmail.com"
+            ><i class="fas fa-envelope"></i> Email</a
+          >
+          <a href="https://github.com/CPKhanal" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a href="https://linkedin.com/in/chandraprakashkhanal" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a href="https://facebook.com/sipi.khanal" target="_blank"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Chandra Prakash Khanal. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: [
+          "Computer Programming Graduate",
+          "Problem Solver",
+          "Full-Stack Developer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+
+    <!-- Vanta Birds Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#home",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x0f172a,
+        color1: 0xe11d48,
+        color2: 0xfacc15,
+        birdSize: 1.5,
+        wingSpan: 25.0,
+        speedLimit: 4.0,
+        separation: 60.0,
+        alignment: 50.0,
+        cohesion: 50.0,
+        quantity: 3,
+      });
+    </script>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-menu");
+        menu.classList.toggle("show-menu");
+      }
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("nav-menu").classList.remove("show-menu");
+        });
+      });
+    </script>
+
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+  offset: 80,     // match your navbar height
+  duration: 600,
+  once: true
+});
+
+    </script>
+  </body>
+</html>
